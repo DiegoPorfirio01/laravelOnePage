@@ -91,7 +91,7 @@
     </div>
 </section>
 
-<section class="page-section atualizacoes bg-secondary text-white"  id="atualizacoes">
+<section class="page-section atualizacoes bg-secondary text-white"  id="depoimentos">
     <div class="container">
         <!-- Atualizacoes Section Heading-->
         <h2 class="page-section-heading text-center text-white mb-0">Depoimentos</h2>
