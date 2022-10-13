@@ -105,39 +105,10 @@
             @if (isset($depoimentos))
             <!-- Item 1-->
             @foreach ($depoimentos as $depoimento)
-            <div class="atualizacoes-modal modal fade" id="atualizacoesModal{{$depoimento->id}}" tabindex="-1" aria-labelledby="atualizacoesModal{{$depoimento->id}}" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                        <div class="modal-body text-center pb-5">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <!-- Atualizacoes Modal - Title-->
-                                        <h2 class="atualizacoes-modal-title text-secondary mb-0">{{$depoimento->title}}</h2>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <img class="img-thumbnail rounded mb-5" style="width: 150px; height: 150px;" src="../img/avatar.jpg" alt="{{$depoimento->title}}" />
-                                        <!-- Atualizacoes Modal - Text-->
-                                        <p class="mb-4 text-secondary">{{$depoimento->description}}</p>
-                                        <button class="btn btn-warning" data-bs-dismiss="modal">
-                                            <i class="fas fa-xmark fa-fw"></i>
-                                            Fechar
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-5">
-                <div class="atualizacoes-item mx-auto" data-bs-toggle="modal" data-bs-target="#atualizacoesModal{{$depoimento->id}}">
+            <div class="col-md-6 col-lg-4 mb-5 bg-white  text-secondary" id="pagina">
+                <div class="atualizacoes-item mx-auto" data-bs-toggle="modal">
                     <div class="atualizacoes-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="atualizacoes-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"> {{$depoimento->title}} </i></div>
+                        <div class="atualizacoes-item-caption-content text-center"><i class="fas fa-star fa-3x"> {{$depoimento->title}} </i></div>
                     </div>
                     <img class="img-thumbnail rounded mb-5" src="../../img/avatar.jpg" alt="{{$depoimento->title}}" />
                 </div>
