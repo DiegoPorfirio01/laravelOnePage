@@ -145,35 +145,26 @@
         <div class="row">
             <!-- Footer Location-->
             <div class="col-lg-4 mb-5 mb-lg-0">
-                <h4 class=" mb-4">Rotas</h4>
+                <h4 class=" mb-4">{{$rodapeEndereco->title ?? ''}}</h4>
                 <p class="lead mb-0">
-                    Rua Cantagalo, 74 - Tatuapé
-                    São Paulo - SP
-                    03307-005
-                    Brasil
+                    {{$rodapeEndereco->description ?? ''}}
                 </p>
                 <a class="btn btn-warning" href="https://www.google.com/maps/dir//Rapidoc+Express+Motoboy/data=!4m8!4m7!1m0!1m5!1m1!1s0x94ce67113e8fb6b3:0x8fab1dd263e7acf1!2m2!1d-46.5730526!2d-23.5473073" target="_blank" rel="noopener noreferrer"> Ver Rotas</a>
             </div>
             <!-- Footer Social Icons-->
             <div class="col-lg-4 mb-5 mb-lg-0">
-                <h4 class="mb-4">Contato</h4>
+                <h4 class="mb-4">{{$rodapeContato->title ?? ''}}</h4>
                 <p class="lead mb-0">
-                    (11) 97589-2648 <br/>
-                    (11) 94732-9746
+                    {{$rodapeContato->description ?? ''}}
                 </p>
                 <a class="btn btn-warning" href="tel:+55-11-97589-2648" target="_blank" rel="noopener noreferrer"> Ligar Agora </a>
             </div>
             <!-- Footer About Text-->
             <div class="col-lg-4">
-                <h4 class="  mb-4">Horários </h4>
+                <h4 class="  mb-4">{{$rodapeHorario->title ?? ''}}
+                </h4>
                 <p class="lead mb-0">
-                    seg.:	08:00 – 20:00
-                    ter.:	08:00 – 20:00
-                    qua.:	08:00 – 20:00
-                    qui.:	08:00 – 20:00
-                    sex.:	08:00 – 20:00
-                    sáb.:	08:00 – 17:00
-                    dom.:	Fechado
+                    {{$rodapeHorario->description ?? ''}}
                 </p>
             </div>
         </div>

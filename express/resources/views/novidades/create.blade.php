@@ -53,7 +53,5 @@
     <link rel="stylesheet" href="../../vendor/adminlte/dist/css/adminlte.css">
 @stop
 
-@section('js')
-    <script> console.log('Hi!'); </script>
-@stop
+
 

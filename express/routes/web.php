@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HeaderController;
 use App\Http\Controllers\NovidadeController;
 use App\Http\Controllers\DepoimentoController;
+use App\Http\Controllers\RodapeContatoController;
+use App\Http\Controllers\RodapeEnderecoController;
+use App\Http\Controllers\RodapeHorarioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,3 +48,13 @@ Route::get('/depoimentos/{id}/edit', [DepoimentoController::class, 'edit'])->mid
 
 Route::put('/depoimentos/update/{id}', [DepoimentoController::class, 'update'])->middleware('auth');
 Route::delete('depoimentos/{id}', [DepoimentoController::class, 'destroy']);
+
+
+Route::get('/rodapehorarios/{id}/edit', [RodapeHorarioController::class, 'edit'])->middleware('auth');
+Route::put('/rodapehorarios/update/{id}', [RodapeHorarioController::class, 'update'])->middleware('auth');
+
+Route::get('/rodapeenderecos/{id}/edit', [RodapeEnderecoController::class, 'edit'])->middleware('auth');
+Route::put('/rodapeenderecos/update/{id}', [RodapeEnderecoController::class, 'update'])->middleware('auth');
+
+Route::get('/rodapecontatos/{id}/edit', [RodapeContatoController::class, 'edit'])->middleware('auth');
+Route::put('/rodapecontatos/update/{id}', [RodapeContatoController::class, 'update'])->middleware('auth');

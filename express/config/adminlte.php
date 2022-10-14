@@ -332,20 +332,26 @@ return [
                     'text' => 'Depoimentos',
                     'url'  => '/depoimentos',
                     'icon' => '',
-                ]
+                ],
+                ['header' => 'Rodape'],
+                [
+                    'text' => 'Contatos',
+                    'url'  => 'rodapecontatos/1/edit',
+                    'icon' => '',
+                ],
+                [
+                    'text' => 'Endereço',
+                    'url'  => 'rodapeenderecos/1/edit',
+                    'icon' => '',
+                ],
+                [
+                    'text' => 'Horários',
+                    'url'  => 'rodapehorarios/1/edit',
+                    'icon' => '',
+                ],
             ]
         ],
-        ['header' => 'account_settings'],
-        [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
-        ],
-        [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ]
+        
     ],
 
     /*
